@@ -100,10 +100,10 @@ def calc_condition(exp,days):
     for item in exp:
          sum=sum+severityDictionary[item]
     if((sum*days)/(len(exp)+1)>13):
-        print("YDoctor Consultation is Required. ")
+        print("Doctor Consultation is Required for further diagnosis ")
         print('\n')
     else:
-        print("Mild symptoms, take precautions.")
+        print("Mild symptoms, take precautions and get rest")
         print('\n')
         
 
@@ -214,7 +214,7 @@ def tree_to_code(tree, feature_names):
             # if(conf_inp=="yes"):
             #     break
         else:
-            print("Enter valid symptom.")
+            print("Enter a valid symptom: ")
 
     while True:
         try:
